@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOP Project | Sign up form</title>
+
+  <link rel="icon" type="image/png" href="./images/odin-lined.png" />
+  <link rel="stylesheet" href="/styles.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <main class="main">
+    <div class="main__col-one">
+      <h1 class="main__primary-heading">
+        <span class="main__logo-box">
+          <img class="main__logo" src="./images/odin-lined.png" alt="TOP Logo">
+        </span> Odin
+      </h1>
+
+      <div class="main__credit-text">Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></div>
+    </div>
+
+    <div class="main__col-two">
+      <p class="main__para">This is not a real online service! You know you need something like this in your life to
+        help you realize your deepest dreams. Sign up <em class="main__fancy-text">know</em> to get started
+      </p>
+
+      <p class="main__para">You <em class="main__fancy-text">know</em> you whan to</p>
+    </div>
+
+    <form id="form" class="form" action="#" method="post">
+      <h2 class="form__heading">Let's do this!</h2>
+
+      <div class="form__controls">
+        <div>
+          <label for="form__fn">
+            First name
+          </label>
+          <input id="form__fn" name="firstName" type="text">
+        </div>
+
+        <div>
+          <label for="form__ln">
+            Last name
+          </label>
+          <input class="form__ln" id="form__ln" name="lastName" type="text">
+        </div>
+      </div>
+
+      <div class="form__controls">
+        <label for="form__email">
+          Email
+        </label>
+        <input id="form__email" name="email" type="email">
+
+        <div>
+          <label for="form__phone-num">
+            Phone number
+          </label>
+          <input id="form__phone-num" name="phoneNum" type="tel" required>
+        </div>
+      </div>
+
+      <div class="form__controls">
+        <div>
+          <label for="form__pwd">
+            Password
+          </label>
+          <input id="form__pwd" name="pwd" type="password" required>
+        </div>
+
+        <div>
+          <label for="form__pwd-confirm">Confirm password</label>
+          <input id="form__pwd-confirm" name="pwdConfirm" type="text" required>
+        </div>
+      </div>
+    </form>
+
+    <button type="submit" form="form">
+      create Account
+    </button>
+
+    <p>
+      Already have an account?
+      <a href="#" class="main__login-link">Log in</a>
+    </p>
+  </main>
+</body>
+
+</html>
